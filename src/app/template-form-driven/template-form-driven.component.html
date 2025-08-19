@@ -1,0 +1,11 @@
+<form >
+    <input type="text" name="value" id="" [(ngModel)]="value" >
+</form>
+{{value}}
+@for(item of articles; track $index){
+
+    @if(item.includes(value)){
+
+        {{item}}
+    }
+}

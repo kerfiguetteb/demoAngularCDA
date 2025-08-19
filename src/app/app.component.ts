@@ -7,10 +7,11 @@ import User from './models/user.model';
 import { CountComponent } from "./count/count.component";
 import { HorlogeComponent } from "./horloge/horloge.component";
 import { CommonModule, DatePipe } from '@angular/common';
+import { TemplateFormDrivenComponent } from "./template-form-driven/template-form-driven.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, UserComponent, CountComponent, HorlogeComponent, DatePipe],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, UserComponent, CountComponent, HorlogeComponent, DatePipe, TemplateFormDrivenComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
