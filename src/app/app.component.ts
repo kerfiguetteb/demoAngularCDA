@@ -2,16 +2,13 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from "./footer/footer.component";
-import { UserComponent } from "./user/user.component";
 import User from './models/user.model';
-import { CountComponent } from "./count/count.component";
-import { HorlogeComponent } from "./horloge/horloge.component";
-import { CommonModule, DatePipe } from '@angular/common';
 import { TemplateFormDrivenComponent } from "./template-form-driven/template-form-driven.component";
+import { ReactiveformComponent } from "./reactiveform/reactiveform.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, UserComponent, CountComponent, HorlogeComponent, DatePipe, TemplateFormDrivenComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, TemplateFormDrivenComponent, ReactiveformComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

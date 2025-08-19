@@ -1,5 +1,6 @@
-<form >
+<form (ngSubmit)="onsubmit()">
     <input type="text" name="value" id="" [(ngModel)]="value" >
+    <input type="submit" value="valider">
 </form>
 {{value}}
 @for(item of articles; track $index){

@@ -8,11 +8,15 @@ import {FormsModule} from '@angular/forms';
   styleUrl: './template-form-driven.component.css'
 })
 export class TemplateFormDrivenComponent {
+  
   articles:string[] = ['fraise', 'banane', 'kiwi']
   
   value:string = ''
 
-
+onsubmit(){
+  this.articles.push(this.value)
+  this.value = ''
+}
 
 
 }
