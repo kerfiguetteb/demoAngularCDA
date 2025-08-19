@@ -1,10 +1,10 @@
 
 <app-header/>
-<h1 >{{title}}</h1>
+<!-- <h1 >{{title}}</h1>
 <h2>{{soustitre}}</h2>
-<button (click)="toogle()" class="bg-indigo-600 text-white p-2 rounded-full cursor-pointer m-2">{{hidden ? 'Masquer' : 'Afficher'}}</button>
+<button (click)="toogle()" class="bg-indigo-600 text-white p-2 rounded-full cursor-pointer m-2">{{hidden ? 'Masquer' : 'Afficher'}}</button> -->
 
-@if (hidden) {
+<!-- @if (hidden) {
     <div class="flex gap-2">
 
 @for (item of users; track item.id) {
@@ -15,5 +15,10 @@
 
 </div>
 }
+<div>
+  <app-count />
+  <app-horloge/>
+</div>
+<p>{{date | date}}</p> -->
 <router-outlet />
 <app-footer/>

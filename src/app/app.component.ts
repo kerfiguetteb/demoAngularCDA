@@ -4,16 +4,20 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from "./footer/footer.component";
 import { UserComponent } from "./user/user.component";
 import User from './models/user.model';
+import { CountComponent } from "./count/count.component";
+import { HorlogeComponent } from "./horloge/horloge.component";
+import { CommonModule, DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, UserComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent, UserComponent, CountComponent, HorlogeComponent, DatePipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 
 export class AppComponent {
 
+  date = new Date();
   users: User[] = [
     { id: 1, nom: 'kerfi', prenom: 'outman', active: true, imgUrl: 'https://picsum.photos/200/300' },
     { id: 2, nom: 'foo', prenom: 'bar', active: true, imgUrl: 'https://picsum.photos/200/300' },
