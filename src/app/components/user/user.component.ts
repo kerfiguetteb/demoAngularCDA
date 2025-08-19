@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import User from '../models/user.model';
+import User from '../../models/user.model';
 
 @Component({
   selector: 'app-user',
@@ -9,6 +9,12 @@ import User from '../models/user.model';
 })
 export class UserComponent {
   @Input() user!:User;
+  hidden:boolean = false;
+
+  toogle(){
+    this.hidden = !this.hidden
+  }
+
 
   supprimer(){
     this.user.active = false;

@@ -1,0 +1,17 @@
+
+
+<div
+    class="relative max-w-xs bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition text-center p-6">
+
+    <button (click)="supprimer()" class="absolute top-3 right-3 text-gray-400 hover:text-red-500 transition cursor-pointer">
+       x
+    </button>
+
+    <img class="w-24 h-24 rounded-full mx-auto object-cover " [src]="user.imgUrl"
+        alt="Photo de profil">
+
+    <h3 class="mt-4 text-xl font-semibold text-gray-900">{{user.nom }} {{user.prenom}}</h3>
+    <p class="text-gray-500">Développeur Web</p>
+
+
+</div>

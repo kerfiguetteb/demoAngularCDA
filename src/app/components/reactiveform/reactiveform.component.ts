@@ -7,7 +7,7 @@ import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } 
   templateUrl: './reactiveform.component.html',
   styleUrl: './reactiveform.component.css'
 })
-export class ReactiveformComponent {
+export class ReactiveFormComponent {
 
   formBuilder = inject(FormBuilder)
 

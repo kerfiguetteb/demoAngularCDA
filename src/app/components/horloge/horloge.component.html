@@ -1,0 +1,7 @@
+<div class="flex justify-around m-3">
+
+    @for (item of fuseaux; track $index) {
+        
+        <app-enfant [zone]="item" [time]="heures[item]"/>
+    }
+</div>

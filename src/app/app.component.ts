@@ -1,14 +1,18 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from "./footer/footer.component";
+import { HeaderComponent } from './commons/header/header.component';
+import { FooterComponent } from "./commons/footer/footer.component";
 import User from './models/user.model';
-import { TemplateFormDrivenComponent } from "./template-form-driven/template-form-driven.component";
-import { ReactiveformComponent } from "./reactiveform/reactiveform.component";
+import { CountComponent } from "./components/count/count.component";
+import { DatePipe } from '@angular/common';
+import { TemplateFormDrivenComponent } from "./components/template-form-driven/template-form-driven.component";
+import { ReactiveFormComponent } from './components/reactiveform/reactiveform.component';
+import { UserComponent } from './components/user/user.component';
+import { HorlogeComponent } from './components/horloge/horloge.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, TemplateFormDrivenComponent, ReactiveformComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent,ReactiveFormComponent, UserComponent, CountComponent, HorlogeComponent, DatePipe, TemplateFormDrivenComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -23,8 +27,8 @@ export class AppComponent {
   ]
 
 
-  title: string = "demo";
-  soustitre: string = "demo2";
+  title: string = "Angular c'est chaud!!!";
+  soustitre: string = "CDA Douai";
 
   hidden:boolean = false;
 
